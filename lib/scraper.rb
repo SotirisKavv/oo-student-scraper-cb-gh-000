@@ -26,7 +26,7 @@ class Scraper
     student[:blog] = "#{links[3].attribute("href")}"
     student[:profile_quote] = doc.css(".profile-quote").text
     student[:bio] = doc.css(".bio-content .description-holder p").text
-    students
+    student
   end
 
 end
