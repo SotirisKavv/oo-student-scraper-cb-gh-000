@@ -10,7 +10,7 @@ class Scraper
       students << {
         :name => card.css("h4.student-name").text,
         :location => card.css("p.student-location").text
-        
+
       }
       binding.pry
     end
