@@ -27,7 +27,7 @@ class Scraper
       elsif media.match(/linkedin/)
         student[:linkedin] = media
       elsif media.match(/github/)
-        student[:twitter] = media
+        student[:github] = media
       else
         student[:blog] = media
       end
