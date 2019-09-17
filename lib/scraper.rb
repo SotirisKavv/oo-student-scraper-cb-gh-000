@@ -12,7 +12,6 @@ class Scraper
         location: card.css("p.student-location").text,
         profile_url: "#{card.css("a").attribute("href")}"
       }
-      binding.pry
     end
     students
   end
