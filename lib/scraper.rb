@@ -8,9 +8,9 @@ class Scraper
     students = []
     doc.css("student-card").each do |card|
       students << {
-        :name => card.css("h4.student-name").text,
-        :location => card.css("p.student-location").text
-
+        name: card.css("h4.student-name").text,
+        location: card.css("p.student-location").text,
+        profile_url: "#{card.css("a").attribute("href")}"
       }
       binding.pry
     end
